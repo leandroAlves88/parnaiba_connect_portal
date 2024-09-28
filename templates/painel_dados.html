@@ -24,6 +24,8 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css')}}" />
   <!-- responsive style -->
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/responsive.css')}}" />
+  <!-- menu style -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/styles_menu.css')}}" />
 </head>
 
 <body class="sub_page">
@@ -34,7 +36,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="">
+            <img src="{{ url_for('static', filename = 'images/logo.png')}}" alt="">
             <span>
               Parnaíba Connect
             </span>
@@ -59,7 +61,7 @@
                   <a class="nav-link" href="/historia"> História </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/blog"> Painel de Dados </a>
+                  <a class="nav-link" href="/painel_dados"> Painel de Dados </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/contact">Contato </a>
@@ -72,55 +74,61 @@
     </header>
     <!-- end header section -->
   </div>
-
-
-
-
+  <div id="tabs" class="tabs">
+    <ul>
+      <li><a href="/painel_dados"><span>
+            <h1>Painél da Saúde</h1>
+          </span></a></li>
+      <li><a href="/painel_dados"><span>
+            <h1>Painél Populacional</h1>
+          </span></a></li>
+      <li><a href="/painel_dados"><span>
+            <h1>Painél da Dengue</h1>
+          </span></a></li>
+      <li><a href="/painel_dados"><span>
+            <h1>Painél Prefeitura</h1>
+          </span></a></li>
+    </ul>
+  </div>
   <!-- blog section -->
-
   <section class="blog_section layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
-          Blog
-        </h2>
-        <img src="images/plug.png" alt="">
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/blog1.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Blog Title Goes Here
-              </h5>
-              <p>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised
-              </p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/blog1.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Blog Title Goes Here
+                </h5>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                  alteration in some form, by injected humour, or randomised
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/blog2.jpg" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Blog Title Goes Here
-              </h5>
-              <p>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised
-              </p>
+          <div class="col-md-6">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/blog2.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Blog Title Goes Here
+                </h5>
+                <p>
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                  alteration in some form, by injected humour, or randomised
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- end blog section -->
