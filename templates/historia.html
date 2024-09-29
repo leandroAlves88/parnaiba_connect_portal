@@ -33,8 +33,8 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="">
+          <a class="navbar-brand" href="/index">
+            <img src="{{ url_for('static', filename = 'images/logo.png')}}" alt="">
             <span>
               Parnaíba Connect
             </span>
@@ -79,7 +79,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          História Cidade Santana de Parnaíba
+          Cidade Santana de Parnaíba
         </h2>
         <img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">
       </div>
@@ -87,24 +87,32 @@
       <div class="service_container">
         <div class="box">
           <div class="img-box">
-            <img src="{{ url_for('static', filename = 'images/s1.png')}}" class="img1" alt="">
+            <a href="https://pt.wikipedia.org/wiki/Santana_de_Parna%C3%ADba#/media/Ficheiro:Bandeira_de_Santana_de_Parna%C3%ADba.png"
+              target="_blank" rel="noopener noreferrer">
+              <img src="{{ url_for('static', filename = 'images/Bandeira_de_Santana_de_Parnaíba.png')}}" class="img1"
+                alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
-              Equipment installation
+              Bandeira de Santana de Parnaíba
             </h5>
             <p>
-              There are many variations of passages of Lorem Ipsum available,
+              A bandeira de Santana de Parnaíba, de autoria do Prof. Arcinoe Antônio Peixoto de Faria. A cruz é símbolo
+              de fé e o círculo o de eternidade, indicando a fé dos munícipes na eternidade de seu município.
             </p>
           </div>
         </div>
         <div class="box active">
           <div class="img-box">
-            <img src="{{ url_for('static', filename = 'images/s2.png')}}" class="img1" alt="">
+            <a href="https://pt.wikipedia.org/wiki/Igreja_Matriz_de_Santana_de_Parna%C3%ADba#/media/Ficheiro:Igreja_matriz_Santa_Anna.jpg"
+              target="_blank" rel="noopener noreferrer">
+              <img src="{{ url_for('static', filename = 'images/Igreja_matriz_Santa_Anna.jpg')}}" class="img1" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
-              Windmill Energy
+              Igreja Matriz Santa Anna
             </h5>
             <p>
               There are many variations of passages of Lorem Ipsum available,
@@ -113,11 +121,15 @@
         </div>
         <div class="box">
           <div class="img-box">
-            <img src="{{ url_for('static', filename = 'images/s3.png')}}" class="img1" alt="">
+            <a href="https://pt.wikipedia.org/wiki/Centro_Hist%C3%B3rico_de_Santana_de_Parna%C3%ADba#/media/Ficheiro:Webysther_20190718093628_-_Santana_de_Parna%C3%ADba.jpg"
+              target="_blank" rel="noopener noreferrer">
+              <img src="{{ url_for('static', filename = 'images/Centro_Historico_Santana_de_Parnaíba.jpg')}}"
+                class="img1" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
-              Equipment Maintenance
+              Centro Histórico
             </h5>
             <p>
               There are many variations of passages of Lorem Ipsum available,
@@ -126,11 +138,15 @@
         </div>
         <div class="box ">
           <div class="img-box">
-            <img src="{{ url_for('static', filename = 'images/s4.png')}}" class="img1" alt="">
+            <a href="https://pt.wikipedia.org/wiki/Santana_de_Parna%C3%ADba#/media/Ficheiro:Webysther_20190718092638_-_Santana_de_Parna%C3%ADba.jpg"
+              target="_blank" rel="noopener noreferrer">
+              <img src="{{ url_for('static', filename = 'images/Cidade_Vista_Cima_Santana_de_Parnaíba.jpg')}}"
+                class="img1" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
-              Offshore Engineering
+              Vista aérea da Cidade
             </h5>
             <p>
               There are many variations of passages of Lorem Ipsum available,
@@ -139,11 +155,31 @@
         </div>
         <div class="box">
           <div class="img-box">
-            <img src="{{ url_for('static', filename = 'images/s5.png')}}" class="img1" alt="">
+            <a href="https://pt.wikipedia.org/wiki/Monumento_aos_Bandeirantes_(Santana_de_Parna%C3%ADba)#/media/Ficheiro:Webysther_20190718131851_-_Santana_de_Parna%C3%ADba.jpg"
+              target="_blank" rel="noopener noreferrer">
+              <img src="{{ url_for('static', filename = 'images/Monumento_Bandeirantes_Santana_de_Parnaíba.jpg')}}"
+                class="img1" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
-              Electrical Wiring
+              Monumento dos Bandeirantes
+            </h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <a href="https://pt.wikipedia.org/wiki/Santana_de_Parna%C3%ADba#/media/Ficheiro:Museu_e_Casa_do_Anhanguera_-foto_Sandro_Almeida_(1).jpg"
+              target="_blank" rel="noopener noreferrer">
+              <img src="{{ url_for('static', filename = 'images/Museu_e_Casa_do_Anhanguera.jpg')}}" class="img1" alt="">
+            </a>
+          </div>
+          <div class="detail-box">
+            <h5>
+              Museu Casa do Anhanguera
             </h5>
             <p>
               There are many variations of passages of Lorem Ipsum available,

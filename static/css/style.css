@@ -410,6 +410,10 @@ a:focus {
   overflow: hidden;
 }
 
+.about_section .img1 {
+  width: 100%;
+}
+
 .about_section .img_container .img-box.b1 {
   width: 50%;
 }
@@ -431,6 +435,8 @@ a:focus {
 
 .about_section .detail-box {
   margin-right: 15%;
+  text-align: justify;
+
 }
 
 .about_section .detail-box p {

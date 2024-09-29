@@ -33,8 +33,8 @@
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="">
+          <a class="navbar-brand" href="/index">
+            <img src="{{ url_for('static', filename = 'images/logo.png')}}" alt="">
             <span>
               Parnaíba Connect
             </span>
@@ -88,15 +88,18 @@
               <img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit
+              Atualmente existem inúmeras fontes de dados abertos disponíveis ao público nas plataformas governamentais.
+              Esses dados são disponibilizados de forma bruta, dificultado a interpretação.
+              </br>
+              Com o objetivo de facilitar o acesso e a interpretação desses dados saúde e populacional para a população
+              de Santana de Parnaíba, desenvolvemos a plataforma Parnaíba Connect. Essa ferramenta inovadora reúne
+              informações públicas sobre saúde e população, apresentando-as de forma clara, intuitiva e acessível a
+              todos.
+
             </p>
-            <a href="">
+            <!--<a href="">
               Saiba Mais
-            </a>
+            </a>-->
           </div>
         </div>
         <div class="col-md-6">
