@@ -22,10 +22,10 @@ def contact():
     return render_template("contact.html")
 
 
-@app.route("/blog")
+@app.route("/painel_dados")
 def blog():
     """Rota de acesso a pagina a pagina Blog."""
-    return render_template("blog.html")
+    return render_template("painel_dados.html")
 
 
 @app.route("/historia")
