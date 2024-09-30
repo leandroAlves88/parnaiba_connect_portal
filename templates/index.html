@@ -11,7 +11,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-
+  <link rel="shortcut icon" href="{{ url_for('static', filename = 'images/logo.png')}}" type="image/x-icon">
   <title>Parnaíba Connect</title>
 
   <!-- slider stylesheet -->
@@ -137,7 +137,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Our Services
+          Sobre a Cidade
         </h2>
         <img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">
       </div>
@@ -145,24 +145,32 @@
       <div class="service_container">
         <div class="box">
           <div class="img-box">
-            <img src="{{ url_for('static', filename = 'images/s1.png')}}" class="img1" alt="">
+            <a href="https://pt.wikipedia.org/wiki/Santana_de_Parna%C3%ADba#/media/Ficheiro:Bandeira_de_Santana_de_Parna%C3%ADba.png"
+              target="_blank" rel="noopener noreferrer">
+              <img src="{{ url_for('static', filename = 'images/Bandeira_de_Santana_de_Parnaíba.png')}}" class="img1"
+                alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
-              Equipment installation
+              Bandeira de Santana de Parnaíba
             </h5>
             <p>
-              There are many variations of passages of Lorem Ipsum available,
+              A bandeira de Santana de Parnaíba, de autoria do Prof. Arcinoe Antônio Peixoto de Faria. A cruz é símbolo
+              de fé e o círculo o de eternidade, indicando a fé dos munícipes na eternidade de seu município.
             </p>
           </div>
         </div>
         <div class="box active">
           <div class="img-box">
-            <img src="{{ url_for('static', filename = 'images/s2.png')}}" class="img1" alt="">
+            <a href="https://pt.wikipedia.org/wiki/Igreja_Matriz_de_Santana_de_Parna%C3%ADba#/media/Ficheiro:Igreja_matriz_Santa_Anna.jpg"
+              target="_blank" rel="noopener noreferrer">
+              <img src="{{ url_for('static', filename = 'images/Igreja_matriz_Santa_Anna.jpg')}}" class="img1" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
-              Windmill Energy
+              Igreja Matriz Santa Anna
             </h5>
             <p>
               There are many variations of passages of Lorem Ipsum available,
@@ -171,37 +179,15 @@
         </div>
         <div class="box">
           <div class="img-box">
-            <img src="{{ url_for('static', filename = 'images/s3.png')}}" class="img1" alt="">
+            <a href="https://pt.wikipedia.org/wiki/Centro_Hist%C3%B3rico_de_Santana_de_Parna%C3%ADba#/media/Ficheiro:Webysther_20190718093628_-_Santana_de_Parna%C3%ADba.jpg"
+              target="_blank" rel="noopener noreferrer">
+              <img src="{{ url_for('static', filename = 'images/Centro_Historico_Santana_de_Parnaíba.jpg')}}"
+                class="img1" alt="">
+            </a>
           </div>
           <div class="detail-box">
             <h5>
-              Equipment Maintenance
-            </h5>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-            </p>
-          </div>
-        </div>
-        <div class="box ">
-          <div class="img-box">
-            <img src="{{ url_for('static', filename = 'images/s4.png')}}" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Offshore Engineering
-            </h5>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="{{ url_for('static', filename = 'images/s5.png')}}" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Electrical Wiring
+              Centro Histórico
             </h5>
             <p>
               There are many variations of passages of Lorem Ipsum available,
@@ -210,8 +196,8 @@
         </div>
       </div>
       <div class="btn-box">
-        <a href="">
-          Read More
+        <a href="/historia">
+          Saiba Mais
         </a>
       </div>
     </div>
@@ -226,29 +212,35 @@
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                About Us
+                Sobre
               </h2>
               <img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit
+              Atualmente existem inúmeras fontes de dados abertos disponíveis ao público nas plataformas governamentais.
+              Esses dados são disponibilizados de forma bruta, dificultado a interpretação.
+              </br>
+              Com o objetivo de facilitar o acesso e a interpretação desses dados saúde e populacional para a população
+              de Santana de Parnaíba, desenvolvemos a plataforma Parnaíba Connect. Essa ferramenta inovadora reúne
+              informações públicas sobre saúde e população, apresentando-as de forma clara, intuitiva e acessível a
+              todos.
+
             </p>
-            <a href="">
-              Read More
-            </a>
+            <!--<a href="">
+              Saiba Mais
+            </a>-->
           </div>
         </div>
         <div class="col-md-6">
           <div class="img_container">
             <div class="img-box b1">
-              <img src="{{ url_for('static', filename = 'images/about-img1.jpg')}}" alt="" />
+              <img src="{{ url_for('static', filename = 'images/integrante1-img.png')}}" alt="" />
             </div>
             <div class="img-box b2">
-              <img src="{{ url_for('static', filename = 'images/about-img2.jpg')}}" alt="" />
+              <img src="{{ url_for('static', filename = 'images/integrante2-img.png')}}" alt="" />
+            </div>
+            <div class="img-box b3">
+              <img src="{{ url_for('static', filename = 'images/integrante3-img.png')}}" alt="" />
             </div>
           </div>
 
