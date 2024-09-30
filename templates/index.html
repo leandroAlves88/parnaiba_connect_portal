@@ -8,9 +8,10 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="keywords" content="Santana de Parnaíba, Saúde, Análise de Dados, Dashboar" />
+  <meta name="description" content="Com o objetivo de facilitar o acesso e a interpretação desses dados saúde e populacional para a população
+  de Santana de Parnaíba, desenvolvemos a plataforma Parnaíba Connect." />
+  <meta name="author" content="Alunos Fatec" />
   <link rel="shortcut icon" href="{{ url_for('static', filename = 'images/logo.png')}}" type="image/x-icon">
   <title>Parnaíba Connect</title>
 
@@ -24,6 +25,8 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css')}}" />
   <!-- responsive style -->
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/responsive.css')}}" />
+  <!-- painel mozaico style -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style_mozaico.css')}}" />
 </head>
 
 <body>
@@ -100,17 +103,17 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <div class="img-box">
-                        <img src="{{ url_for('static', filename = 'images/slider-img.jpg')}}" alt="">
+                        <img src="{{ url_for('static', filename = 'images/imagem_home_2.jpg')}}" alt="">
                       </div>
                     </div>
                     <div class="carousel-item">
                       <div class="img-box">
-                        <img src="{{ url_for('static', filename = 'images/slider-img.jpg')}}" alt="">
+                        <img src="{{ url_for('static', filename = 'images/imagem_home_1.jpg')}}" alt="">
                       </div>
                     </div>
                     <div class="carousel-item">
                       <div class="img-box">
-                        <img src="{{ url_for('static', filename = 'images/slider-img.jpg')}}" alt="">
+                        <img src="{{ url_for('static', filename = 'images/imagem_home_3.jpg')}}" alt="">
                       </div>
                     </div>
                   </div>
@@ -137,69 +140,67 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Sobre a Cidade
+          Cidade
         </h2>
         <img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">
       </div>
+      <div class="favth-container">
+        <div class="favth-row">
 
-      <div class="service_container">
-        <div class="box">
-          <div class="img-box">
-            <a href="https://pt.wikipedia.org/wiki/Santana_de_Parna%C3%ADba#/media/Ficheiro:Bandeira_de_Santana_de_Parna%C3%ADba.png"
-              target="_blank" rel="noopener noreferrer">
-              <img src="{{ url_for('static', filename = 'images/Bandeira_de_Santana_de_Parnaíba.png')}}" class="img1"
-                alt="">
-            </a>
+          <div id="fav-focus" class="favth-content-block favth-clearfix">
+
+
+            <div id="fav-focus1" class="favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
+
+              <div class="moduletable-SANTANA-DE-PARNAIBA">
+                <h3>Santana de Parnaíba</h3>
+                <div class="gkNspPM gkNspPM-NewNewsHeader active" id="nsp-105" data-layout="main_2rows_2rows">
+                  <div class="gkImagesWrapper">
+                    <div class="gkImage gkImage1">
+                      <div class="gkImageArea"
+                        style="background-image: url('/static/images/Cidade_Vista_Cima_Santana_de_Parnaíba.jpg');background-repeat: no-repeat">
+                      </div>
+                      <h2 class="gkTitle"><a href="/historia">Centro Santana de Parnaíba</a></h2>
+                    </div>
+                    <div class="gkImage gkImage2">
+                      <div class="gkImageArea"
+                        style="background-image: url('/static/images/Centro_Historico_Santana_de_Parnaíba.jpg');background-repeat: no-repeat">
+                      </div>
+                      <h2 class="gkTitle"><a href="/historia">Centro Histórico</a></h2>
+                    </div>
+                    <div class="gkImage gkImage3">
+                      <div class="gkImageArea"
+                        style="  background-image: url('/static/images/Monumento_Bandeirantes_Santana_de_Parnaíba.jpg');background-repeat: no-repeat;">
+                      </div>
+                      <h2 class="gkTitle"><a href="/historia">Monumento ao Bandeirantes</a></h2>
+                    </div>
+                    <div class="gkImage gkImage4">
+                      <div class="gkImageArea"
+                        style="background-image: url('/static/images/Museu_e_Casa_do_Anhanguera.jpg');background-repeat: no-repeat;">
+                      </div>
+                      <h2 class=" gkTitle"><a href="/historia">Museu Anhanguera</a></h2>
+                    </div>
+                    <div class="gkImage gkImage5">
+                      <div class="gkImageArea"
+                        style="background-image: url('/static/images/Igreja_matriz_Santa_Anna.jpg');background-repeat: no-repeat">
+                      </div>
+                      <h2 class="gkTitle"><a href="/historia">Igreja Matriz Santa Anna</a></h2>
+                    </div>
+                    <div class="gkBlankImage"> <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAB4CAYAAAB1ovlvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAYUlEQVR4nO3BgQAAAADDoPlTH+ECVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwDcshwABSAg04AAAAABJRU5ErkJggg=="
+                        alt=""> </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
           </div>
-          <div class="detail-box">
-            <h5>
-              Bandeira de Santana de Parnaíba
-            </h5>
-            <p>
-              A bandeira de Santana de Parnaíba, de autoria do Prof. Arcinoe Antônio Peixoto de Faria. A cruz é símbolo
-              de fé e o círculo o de eternidade, indicando a fé dos munícipes na eternidade de seu município.
-            </p>
-          </div>
-        </div>
-        <div class="box active">
-          <div class="img-box">
-            <a href="https://pt.wikipedia.org/wiki/Igreja_Matriz_de_Santana_de_Parna%C3%ADba#/media/Ficheiro:Igreja_matriz_Santa_Anna.jpg"
-              target="_blank" rel="noopener noreferrer">
-              <img src="{{ url_for('static', filename = 'images/Igreja_matriz_Santa_Anna.jpg')}}" class="img1" alt="">
-            </a>
-          </div>
-          <div class="detail-box">
-            <h5>
-              Igreja Matriz Santa Anna
-            </h5>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <a href="https://pt.wikipedia.org/wiki/Centro_Hist%C3%B3rico_de_Santana_de_Parna%C3%ADba#/media/Ficheiro:Webysther_20190718093628_-_Santana_de_Parna%C3%ADba.jpg"
-              target="_blank" rel="noopener noreferrer">
-              <img src="{{ url_for('static', filename = 'images/Centro_Historico_Santana_de_Parnaíba.jpg')}}"
-                class="img1" alt="">
-            </a>
-          </div>
-          <div class="detail-box">
-            <h5>
-              Centro Histórico
-            </h5>
-            <p>
-              There are many variations of passages of Lorem Ipsum available,
-            </p>
-          </div>
+
         </div>
       </div>
-      <div class="btn-box">
-        <a href="/historia">
-          Saiba Mais
-        </a>
-      </div>
+
     </div>
   </section>
   <!-- end service section -->
