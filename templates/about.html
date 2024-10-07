@@ -56,7 +56,7 @@
                   <a class="nav-link" href="/about"> Sobre</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/historia"> História </a>
+                  <a class="nav-link" href="/historia"> Cidade </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/painel_dados"> Painel de Dados </a>
@@ -130,68 +130,54 @@
       <div class="info_contact">
         <div class="row">
           <div class="col-md-4">
-            <a href="">
-              <img src="images/location-white.png" alt="">
+            <a class="navbar-brand2 navbar-brand" href="/index">
+              <img src="{{ url_for('static', filename = 'images/logo.png')}}" alt="">
               <span>
-                Passages of Lorem Ipsum available
+                Parnaíba Connect
               </span>
             </a>
           </div>
           <div class="col-md-4">
-            <a href="">
-              <img src="images/telephone-white.png" alt="">
-              <span>
-                Call : +012334567890
-              </span>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="">
-              <img src="images/envelope-white.png" alt="">
-              <span>
-                demo@gmail.com
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 col-lg-9">
-          <div class="info_form">
-            <form action="">
-              <input type="text" placeholder="Enter your email">
-              <button>
-                subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3">
-          <div class="info_social">
-            <div>
-              <a href="">
-                <img src="images/fb.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/instagram.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
 
+            <ul>
+              <li><a href="/index"><span>
+                    <h4>Home</h4>
+                  </span></a></li>
+              <li><a href="/about"><span>
+                    <h4>Sobre</h4>
+                  </span></a></li>
+              <li><a href="/historia"><span>
+                    <h4>Cidade</h4>
+                  </span></a></li>
+              <li><a href="/painel_dados"><span>
+                    <h4>Painel de dados</h4>
+                  </span></a></li>
+              <li><a href="/contact"><span>
+                    <h4>Contato</h4>
+                  </span></a></li>
+            </ul>
+
+          </div>
+          <div class="col-md-4">
+            <a href="/contact">
+              <img src="{{ url_for('static', filename = 'images/envelope-white.png')}}" alt="">
+              <span>
+                Entre em contato
+                <br>
+                <br>
+                ENDEREÇO:
+                <br>
+                <br>
+                FATEC Santana de Parnaíba
+                <br>
+                Av. Ten. Marques, 5136 - Chácara do Solar I (Fazendinha),
+                <br>
+                Santana de Parnaíba - SP, 06530-001
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -203,8 +189,8 @@
       <div class="row">
         <div class="col-lg-7 col-md-9 mx-auto">
           <p>
-            &copy; 2019 All Rights Reserved By
-            <a href="https://html.design/">Free Html Templates</a>
+            &copy; 2024 - Todos os direitos reservados
+            <a href="/index">www.parnaibaconnect.com.br</a>
           </p>
         </div>
       </div>
