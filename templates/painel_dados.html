@@ -58,7 +58,7 @@
                   <a class="nav-link" href="/about"> Sobre</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/historia"> História </a>
+                  <a class="nav-link" href="/historia"> Cidade </a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="/painel_dados"> Painel de Dados </a>
@@ -74,61 +74,45 @@
     </header>
     <!-- end header section -->
   </div>
-  <div id="tabs" class="tabs">
-    <ul>
-      <li><a href="/painel_dados"><span>
-            <h1>Saúde</h1>
-          </span></a></li>
-      <li><a href="/painel_dados"><span>
-            <h1>Populacional</h1>
-          </span></a></li>
-      <li><a href="/painel_dados"><span>
-            <h1>Dengue</h1>
-          </span></a></li>
-      <li><a href="/painel_dados"><span>
-            <h1>Prefeitura</h1>
-          </span></a></li>
-    </ul>
-  </div>
   <!-- blog section -->
   <section class="blog_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <div class="row">
-          <div class="col-md-6">
-            <div class="box">
-              <div class="img-box">
-                <img src="{{ url_for('static', filename = 'images/blog1.jpg')}}" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Blog Title Goes Here
-                </h5>
-                <p>
-                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                  alteration in some form, by injected humour, or randomised
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/blog2.jpg" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Blog Title Goes Here
-                </h5>
-                <p>
-                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                  alteration in some form, by injected humour, or randomised
-                </p>
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/painel_dados">Saúde <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/painel_dados"> Populacional</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/painel_dados"> Dengue </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/painel_dados"> Prefeitura </a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
+          </nav>
+
         </div>
       </div>
+      <iframe
+        src="https://app.powerbi.com/view?r=eyJrIjoiYjM0YjBlNWItNGRmZC00MjgwLWJlYjAtNDJjMjMxMzNkYzc4IiwidCI6ImJjOTljZTFhLWYwOGEtNDY4Yy1hOGJlLWI0NmQzZDUyMzRhNiJ9"
+        class="col-12 iframe-dashboard" frameborder="0" allowfullscreen="" title="Painel PowerBi Transparencia"
+        width="2000" height="1200"></iframe>
   </section>
 
   <!-- end blog section -->
@@ -145,68 +129,54 @@
       <div class="info_contact">
         <div class="row">
           <div class="col-md-4">
-            <a href="">
-              <img src="images/location-white.png" alt="">
+            <a class="navbar-brand2 navbar-brand" href="/index">
+              <img src="{{ url_for('static', filename = 'images/logo.png')}}" alt="">
               <span>
-                Passages of Lorem Ipsum available
+                Parnaíba Connect
               </span>
             </a>
           </div>
           <div class="col-md-4">
-            <a href="">
-              <img src="images/telephone-white.png" alt="">
-              <span>
-                Call : +012334567890
-              </span>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="">
-              <img src="images/envelope-white.png" alt="">
-              <span>
-                demo@gmail.com
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 col-lg-9">
-          <div class="info_form">
-            <form action="">
-              <input type="text" placeholder="Enter your email">
-              <button>
-                subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3">
-          <div class="info_social">
-            <div>
-              <a href="">
-                <img src="images/fb.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <img src="images/instagram.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
 
+            <ul>
+              <li><a href="/index"><span>
+                    <h4>Home</h4>
+                  </span></a></li>
+              <li><a href="/about"><span>
+                    <h4>Sobre</h4>
+                  </span></a></li>
+              <li><a href="/historia"><span>
+                    <h4>Cidade</h4>
+                  </span></a></li>
+              <li><a href="/painel_dados"><span>
+                    <h4>Painel de dados</h4>
+                  </span></a></li>
+              <li><a href="/contact"><span>
+                    <h4>Contato</h4>
+                  </span></a></li>
+            </ul>
+
+          </div>
+          <div class="col-md-4">
+            <a href="/contact">
+              <img src="{{ url_for('static', filename = 'images/envelope-white.png')}}" alt="">
+              <span>
+                Entre em contato
+                <br>
+                <br>
+                ENDEREÇO:
+                <br>
+                <br>
+                FATEC Santana de Parnaíba
+                <br>
+                Av. Ten. Marques, 5136 - Chácara do Solar I (Fazendinha),
+                <br>
+                Santana de Parnaíba - SP, 06530-001
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -219,8 +189,8 @@
       <div class="row">
         <div class="col-lg-7 col-md-9 mx-auto">
           <p>
-            &copy; 2019 All Rights Reserved By
-            <a href="https://html.design/">Free Html Templates</a>
+            &copy; 2024 - Todos os direitos reservados
+            <a href="/index">www.parnaibaconnect.com.br</a>
           </p>
         </div>
       </div>
