@@ -88,27 +88,30 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <form action="">
+          <form id="formularioEnvio">
             <div class="divCategoria">
               Tipo de Contato:
               <select id=categoria class="categoria" type="categoria">
                 <option value="">Selecione uma opção</option>
-                <option value="comboSujestao">Sujestão</option>
-                <option value="comboReclamacao">Reclamação</option>
-                <option value="comboDuvida">Dúvida</option>
+                <option value="Sugestão">Sugestão</option>
+                <option value="Reclamação">Reclamação</option>
+                <option value="Dúvida">Dúvida</option>
               </select>
             </div>
             <div>
-              <input type="text" placeholder="Nome" />
+              <input id="nome" type="text" placeholder="Nome" />
             </div>
             <div>
-              <input type="email" placeholder="Email" />
+              <input id="email" type="email" placeholder="Email" />
             </div>
             <div>
-              <input type="text" class="message-box" placeholder="Mensagem" />
+              <input id="telefone" type="tefone" placeholder="Telefone (Opcional)" />
+            </div>
+            <div>
+              <input id="mensagem" type="text" class="message-box" placeholder="Mensagem" />
             </div>
             <div class="d-flex ">
-              <button>
+              <button type="submit">
                 Enviar
               </button>
             </div>
@@ -208,7 +211,7 @@
 
   <script src="{{ url_for('static', filename = 'js/jquery-3.4.1.min.js')}}"></script>
   <script src="{{ url_for('static', filename = 'js/bootstrap.js')}}"></script>
-
+  <script src="{{ url_for('static', filename = 'js/script.js')}}"></script>
 </body>
 
 </html>
