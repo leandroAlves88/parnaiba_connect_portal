@@ -6,7 +6,7 @@ formulario.addEventListener('submit', (event) => {
 
     const dadosFormulario = transformaFormulario(event);
 
-    executarTarefas(dadosFormulario);
+    executarTarefasdeEnvio(dadosFormulario);
 });
 
 function base64Encode(username, password) {
@@ -48,8 +48,6 @@ function transformaFormulario(event) {
 }
 
 function constroeHeader(valor1, valor2) {
-    console.log("valor1: " + valor1);
-    console.log("valor2: " + valor2);
 
     let headers = new Headers();
     const encodedCredentials = base64Encode(valor1, valor2);
@@ -61,17 +59,15 @@ function constroeHeader(valor1, valor2) {
 }
 
 function getproperti() {
-    fetch('/busca_prop')
+    return fetch('/busca_prop')
         .then(response => response.json())
         .then(data => {
-
             return new Promise(resolve => {
                 // Execução da tarefa
                 setTimeout(() => {
                     let headerGerado = constroeHeader(data["valor1"], data["valor2"]);
-                    console.log('Tarefa 1 concluída');
                     resolve(headerGerado);
-                }, 2000);
+                }, 1000);
             });
         })
 
@@ -89,10 +85,8 @@ function envia_email(url, header, method, dados) {
 
             }
             return new Promise(resolve => {
-                console.log('Tarefa 2 iniciada com resultado:');
                 // Simulando outra tarefa assíncrona
                 setTimeout(() => {
-                    console.log('Tarefa 2 concluída');
                     resolve(response.json());
                 }, 1000);
             });
@@ -110,16 +104,14 @@ function envia_email(url, header, method, dados) {
         });
 
     return new Promise(resolve => {
-        console.log('Tarefa 2 iniciada com resultado:');
         // Simulando outra tarefa assíncrona
         setTimeout(() => {
-            console.log('Tarefa 2 concluída');
             resolve('Resultado da tarefa 2');
         }, 100);
     });
 }
 
-async function executarTarefas(dados) {
+async function executarTarefasdeEnvio(dados) {
     const header = await getproperti();
     const envio = await envia_email(URL_ENVIA_EMAIL, header, METHOD, dados);
 }
