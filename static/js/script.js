@@ -58,7 +58,7 @@ function constroeHeader(valor1, valor2) {
 
 }
 
-function getproperti() {
+function getproperty() {
     return fetch('/busca_prop')
         .then(response => response.json())
         .then(data => {
@@ -112,6 +112,6 @@ function envia_email(url, header, method, dados) {
 }
 
 async function executarTarefasdeEnvio(dados) {
-    const header = await getproperti();
+    const header = await getproperty();
     const envio = await envia_email(URL_ENVIA_EMAIL, header, METHOD, dados);
 }
