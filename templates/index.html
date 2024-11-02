@@ -78,22 +78,23 @@
     <section class=" slider_section ">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 ">
+          <div class="col-md-6">
             <div class="detail_box">
-              <h1>
-                Parnaíba Connect: <br>
-                Os dados a serviço <br>
-                da cidade
-              </h1>
+              <div class="heading_container">
+                <p>
+                <h2>
+                  Parnaíba Connect: <br>
+                  Os dados a serviço da cidade.
+                </h2>
+                </p>
+              </div>
               <p>
-                Vivemos em um mundo repleto de dados. Ao analisar as informações sobre saúde e população de <b>Santana
-                  de
-                  Parnaíba</b>, podemos identificar problemas e oportunidades, e assim tomar decisões mais eficientes
-                para
-                melhorar a vida de todos.
-              </p>
-              <!--<a href="" class="">
-                Contact Us-->
+                No cenário digital atual, a grande quantidade de dados nem sempre facilita o acesso à informação de
+                qualidade. Em Santana de Parnaíba, dados essenciais de saúde estão fragmentados em diversas fontes, o
+                que dificulta a consulta e interpretação pela população. Este portal busca resolver esse problema,
+                centralizando e organizando dados de saúde do município para oferecer informações acessíveis e
+                relevantes. Além de simplificar o acesso, incentiva o engajamento cidadão por meio de feedbacks e
+                sugestões, promovendo a democratização da informação para benefício de todos.</p>
             </div>
           </div>
           <div class="col-lg-5 col-md-6 offset-lg-1">
@@ -103,17 +104,17 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <div class="img-box">
-                        <img src="{{ url_for('static', filename = 'images/imagem_home_2.jpg')}}" alt="">
+                        <img src="{{ url_for('static', filename = 'images/imagem_home_1_nova.png')}}" alt="">
                       </div>
                     </div>
                     <div class="carousel-item">
                       <div class="img-box">
-                        <img src="{{ url_for('static', filename = 'images/imagem_home_1.jpg')}}" alt="">
+                        <img src="{{ url_for('static', filename = 'images/imagem_home_2_nova.jpg')}}" alt="">
                       </div>
                     </div>
                     <div class="carousel-item">
                       <div class="img-box">
-                        <img src="{{ url_for('static', filename = 'images/imagem_home_3.jpg')}}" alt="">
+                        <img src="{{ url_for('static', filename = 'images/imagem_home_3_nova.png')}}" alt="">
                       </div>
                     </div>
                   </div>
@@ -142,16 +143,12 @@
         <h2>
           Cidade
         </h2>
-        <img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">
+        <!--<img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">-->
       </div>
       <div class="favth-container">
         <div class="favth-row">
-
           <div id="fav-focus" class="favth-content-block favth-clearfix">
-
-
             <div id="fav-focus1" class="favth-col-lg-12 favth-col-md-12 favth-col-sm-12 favth-col-xs-12">
-
               <div class="moduletable-SANTANA-DE-PARNAIBA">
                 <h3>Santana de Parnaíba</h3>
                 <div class="gkNspPM gkNspPM-NewNewsHeader active" id="nsp-105" data-layout="main_2rows_2rows">
@@ -192,15 +189,10 @@
                   </div>
                 </div>
               </div>
-
             </div>
-
-
           </div>
-
         </div>
       </div>
-
     </div>
   </section>
   <!-- end service section -->
@@ -215,16 +207,17 @@
               <h2>
                 Sobre
               </h2>
-              <img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">
+              <!--<img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">-->
             </div>
             <p>
-              Atualmente existem inúmeras fontes de dados abertos disponíveis ao público nas plataformas governamentais.
-              Esses dados são disponibilizados de forma bruta, dificultado a interpretação.
-              </br>
-              Com o objetivo de facilitar o acesso e a interpretação desses dados saúde e populacional para a população
-              de Santana de Parnaíba, desenvolvemos a plataforma Parnaíba Connect. Essa ferramenta inovadora reúne
-              informações públicas sobre saúde e população, apresentando-as de forma clara, intuitiva e acessível a
-              todos.
+              O portal <b>Parnaíba Connect</b> é um trabalho de graduação desenvolvido pelos alunos Jefferson Vitorino,
+              Leandro
+              Ferreira e Thiago Ibiapino, estudantes do curso de Tecnologia em Ciência de Dados na Fatec Santana de
+              Parnaíba. O objetivo do projeto é transmitir aos cidadãos parnaibanos e outros interessados informações
+              relacionadas ao indicador de Saúde e Bem-Estar, contemplado no Objetivo de Desenvolvimento Sustentável Nº
+              3. Isto consolidando dados de diferentes fontes, como por exemplo, o SEADE, Portal da Transparência,
+              Censo, IBGE e outras. Com esses dados, entende-se como possível gerar maior engajamento e participação
+              social.
 
             </p>
             <!--<a href="">
@@ -261,29 +254,28 @@
   <section class="blog_section layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
-          Blog
-        </h2>
-        <img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">
+        <!--<img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">-->
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-auto">
           <div class="box">
-            <div class="img-box">
-              <img src="{{ url_for('static', filename = 'images/blog1.jpg')}}" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Blog Title Goes Here
-              </h5>
-              <p>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised
-              </p>
-            </div>
+            <a href="/painel_dados">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename = 'images/Vamos Falar de Saúde.jpg')}}" alt="">
+            </a>
+          </div>
+          <div class="detail-box">
+            <h5>
+              Blog Title Goes Here
+            </h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, or randomised
+            </p>
           </div>
         </div>
-        <div class="col-md-6">
+      </div>
+      <!--<div class="col-md-6">
           <div class="box">
             <div class="img-box">
               <img src="{{ url_for('static', filename = 'images/blog2.jpg')}}" alt="">
@@ -298,8 +290,8 @@
               </p>
             </div>
           </div>
-        </div>
-      </div>
+        </div>-->
+    </div>
     </div>
   </section>
 
@@ -373,7 +365,7 @@
         <div class="col-lg-7 col-md-9 mx-auto">
           <p>
             &copy; 2024 - Todos os direitos reservados
-            <a href="/index">www.parnaibaconnect.com.br</a>
+            <a href="/index">Parnaiba Connect</a>
           </p>
         </div>
       </div>
@@ -382,8 +374,8 @@
   <!-- footer section -->
 
 
-  <script src="{{ url_for('static', filename = 'js/jquery-3.4.1.min.js')}}"></script>
-  <script src="{{ url_for('static', filename = 'js/bootstrap.js')}}"></script>
+  <!--<script src="{{ url_for('static', filename = 'js/jquery-3.4.1.min.js')}}"></script>
+  <script src="{{ url_for('static', filename = 'js/bootstrap.js')}}"></script>-->
 
 </body>
 
