@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename = 'images/logo.png')}}" type="image/x-icon">
+  <title>Parnaíba Connect</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/link.css')}}" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/bootstrap.css')}}" />
+  <!-- fonts style -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/font.css')}}" />
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css')}}" />
+  <!-- responsive style -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/responsive.css')}}" />
+  <!-- menu style -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/styles_menu.css')}}" />
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="/index">
+            <img src="{{ url_for('static', filename = 'images/logo.png')}}" alt="">
+            <span>
+              Parnaíba Connect
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/historia"> Cidade </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/painel_dados"> Painel de Dados </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contato </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about"> Sobre</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  <!-- blog section -->
+  <section class="blog_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/painel_dados">Saúde <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/painel_dados_populacao"> Populacional</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/painel_dados_prefeitura"> Prefeitura </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/painel_dados_dengue"> Dengue </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="iframe-container"></div>
+    <!--    <iframe  src="https://app.powerbi.com/view?r=eyJrIjoiYjM0YjBlNWItNGRmZC00MjgwLWJlYjAtNDJjMjMxMzNkYzc4IiwidCI6ImJjOTljZTFhLWYwOGEtNDY4Yy1hOGJlLWI0NmQzZDUyMzRhNiJ9"
+      class="col-12 iframe-dashboard" frameborder="0" allowfullscreen="" title="Painel PowerBi Transparencia"
+      width="2000" height="1200"></iframe>-->
+  </section>
+
+  <!-- end blog section -->
+
+
+
+
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="info_contact">
+        <div class="row">
+          <div class="col-md-4">
+            <a class="navbar-brand2 navbar-brand" href="/index">
+              <img src="{{ url_for('static', filename = 'images/logo.png')}}" alt="">
+              <span>
+                Parnaíba Connect
+              </span>
+            </a>
+          </div>
+          <div class="col-md-4">
+
+            <ul>
+              <li><a href="/index"><span>
+                    <h4>Home</h4>
+                  </span></a></li>
+              <li><a href="/about"><span>
+                    <h4>Sobre</h4>
+                  </span></a></li>
+              <li><a href="/historia"><span>
+                    <h4>Cidade</h4>
+                  </span></a></li>
+              <li><a href="/contact"><span>
+                    <h4>Contato</h4>
+                  </span></a></li>
+              <li><a href="/painel_dados"><span>
+                    <h4>Painel de dados</h4>
+                  </span></a></li>
+            </ul>
+
+          </div>
+          <div class="col-md-4">
+            <a href="/contact">
+              <img src="{{ url_for('static', filename = 'images/envelope-white.png')}}" alt="">
+              <span>
+                Entre em contato
+                <br>
+                <br>
+                ENDEREÇO:
+                <br>
+                <br>
+                FATEC Santana de Parnaíba
+                <br>
+                Av. Ten. Marques, 5136 - Chácara do Solar I (Fazendinha),
+                <br>
+                Santana de Parnaíba - SP, 06530-001
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-md-9 mx-auto">
+          <p>
+            &copy; 2024 - Todos os direitos reservados
+            <a href="/index">Parnaiba Connect</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+
+  <!--<script src="{{ url_for('static', filename = 'js/jquery-3.4.1.min.js')}}"></script>
+  <script src="{{ url_for('static', filename = 'js/bootstrap.js')}}"></script>-->
+  <script src="{{ url_for('static', filename = 'js/script_painel.js')}}"></script>
+</body>
+
+</html>
