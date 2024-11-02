@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify, request
-import sender_mail
+import app.sender_mail as sender_mail
 import base64
 import configparser
 
