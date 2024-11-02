@@ -24,6 +24,8 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/style.css')}}" />
   <!-- responsive style -->
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/responsive.css')}}" />
+  <!-- menu style -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/styles_menu.css')}}" />
 </head>
 
 <body class="sub_page">
@@ -49,16 +51,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
-                <li class="nav-item ">
+                <li class="nav-item">
                   <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/historia"> Cidade </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" href="/painel_dados"> Painel de Dados </a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="/contact">Contato </a>
                 </li>
                 <li class="nav-item">
@@ -72,66 +74,62 @@
     </header>
     <!-- end header section -->
   </div>
-
-
-  <!-- contact section -->
-
-  <section class="contact_section layout_padding">
-    <div class="container ">
-      <div class="heading_container">
-        <h2>
-          Contate-nos
-        </h2>
-        <!--<img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">-->
-      </div>
-    </div>
+  <!-- blog section -->
+  <section class="blog_section layout_padding">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <form id="formularioEnvio">
-            <div class="divCategoria">
-              Tipo de Contato:
-              <select id=categoria class="categoria" type="categoria">
-                <option value="">Selecione uma opção</option>
-                <option value="Sugestão">Sugestão</option>
-                <option value="Reclamação">Reclamação</option>
-                <option value="Dúvida">Dúvida</option>
-              </select>
+      <div class="heading_container">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/painel_dados">Saúde <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/painel_dados_populacao"> Populacional</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/painel_dados_prefeitura"> Prefeitura </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/painel_dados_dengue"> Dengue </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <input id="nome" type="text" placeholder="Nome" />
-            </div>
-            <div>
-              <input id="email" type="email" placeholder="Email" />
-            </div>
-            <div>
-              <input id="telefone" type="tefone" placeholder="Telefone (Opcional)" />
-            </div>
-            <div>
-              <input id="mensagem" type="text" class="message-box" placeholder="Mensagem" />
-            </div>
-            <div class="d-flex ">
-              <button type="submit">
-                Enviar
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container">
-            <div class="map-responsive">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.5717130124367!2d-46.880641078412644!3d-23.406645418504773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf1ddad2858c6f%3A0x8540bd64dbbe879b!2sFATEC%20Santana%20de%20Parna%C3%ADba!5e0!3m2!1spt-BR!2sbr!4v1726836078166!5m2!1spt-BR!2sbr"
-                width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
-                allowfullscreen></iframe>
-            </div>
-          </div>
+          </nav>
         </div>
       </div>
+      <div class="d-flex flex-column align-items-center">
+        <p>
+        <h4>Painel da Dengue </h3>Disponibilizado pela Prefeitura.<br>
+          <a href="https://prefeitura.santanadeparnaiba.sp.gov.br/Plataforma" target="_blank"
+            rel="noopener noreferrer">Fonte: prefeitura.santanadeparnaiba.sp.gov.br</a>
+          </p>
+      </div>
+      <div>
+        <iframe
+          src="https://app.powerbi.com/view?r=eyJrIjoiMjNmZTFlZGEtODc3Yy00NTc2LWJlN2ItNTM3Njg1MzE3NWU4IiwidCI6ImIwNGJlZGNhLTY3NjctNDEzOC05MjU2LWRjYjgxMTlkOGQxZCJ9"
+          class="col-12 iframe-dashboard" frameborder="0" allowfullscreen="" title="Painel PowerBi Transparencia"
+          width="1800" height="600"></iframe>
+      </div>
     </div>
+
   </section>
 
-  <!-- end contact section -->
+  <!-- end blog section -->
+
+
+
+
 
 
   <!-- info section -->
@@ -154,17 +152,17 @@
               <li><a href="/index"><span>
                     <h4>Home</h4>
                   </span></a></li>
+              <li><a href="/about"><span>
+                    <h4>Sobre</h4>
+                  </span></a></li>
               <li><a href="/historia"><span>
                     <h4>Cidade</h4>
-                  </span></a></li>
-              <li><a href="/painel_dados"><span>
-                    <h4>Painel de dados</h4>
                   </span></a></li>
               <li><a href="/contact"><span>
                     <h4>Contato</h4>
                   </span></a></li>
-              <li><a href="/about"><span>
-                    <h4>Sobre</h4>
+              <li><a href="/painel_dados"><span>
+                    <h4>Painel de dados</h4>
                   </span></a></li>
             </ul>
 
@@ -194,6 +192,7 @@
 
   <!-- end info section -->
 
+
   <!-- footer section -->
   <footer class="container-fluid footer_section">
     <div class="container">
@@ -209,9 +208,10 @@
   </footer>
   <!-- footer section -->
 
+
   <!--<script src="{{ url_for('static', filename = 'js/jquery-3.4.1.min.js')}}"></script>
-  <script src="{{ url_for('static', filename = 'js/bootstrap.js')}}"></script>-->
-  <script src="{{ url_for('static', filename = 'js/script.js')}}"></script>
+  <script src="{{ url_for('static', filename = 'js/bootstrap.js')}}"></script>
+  <script src="{{ url_for('static', filename = 'js/script_painel.js')}}"></script>-->
 </body>
 
 </html>

@@ -32,13 +32,31 @@ def contact():
 
 
 @app.route("/painel_dados")
-def blog():
-    """Rota de acesso a pagina a pagina Blog."""
-    return render_template("painel_dados.html")
+def painel_dados():
+    """Rota de acesso a pagina a pagina dados da saúde."""
+    return render_template("painel_dados_saude.html")
+
+
+@app.route("/painel_dados_populacao")
+def painel_dados_populacao():
+    """Rota de acesso a pagina a pagina dados populacionais."""
+    return render_template("painel_dados_populacao.html")
+
+
+@app.route("/painel_dados_prefeitura")
+def painel_dados_prefeitura():
+    """Rota de acesso a pagina a pagina dados da prefeitura."""
+    return render_template("painel_dados_prefeitura.html")
+
+
+@app.route("/painel_dados_dengue")
+def painel_dados_dengue():
+    """Rota de acesso a pagina a pagina dado da dengue."""
+    return render_template("painel_dados_dengue.html")
 
 
 @app.route("/historia")
-def service():
+def historia():
     """Rota de acesso a pagina a pagina Service."""
     return render_template("historia.html")
 
