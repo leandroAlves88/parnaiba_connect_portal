@@ -9,12 +9,44 @@ function detectar_mobile() {
     return check;
 }
 
+const container_saude = document.getElementById("iframe-container-saude");
+const container_populacao = document.getElementById("iframe-container-populacao");
+const container_prefeitura = document.getElementById("iframe-container-prefeitura");
+
 if (detectar_mobile()) {
-    document.getElementById("iframe-container").innerHTML = `
-        <p class="heading_container">Em desenvolvimento painel Mobile</p>
-    `;
+    if (container_saude) {
+        document.getElementById("iframe-container-saude").innerHTML = `
+        <p class="heading_container">Painel Saúde em desenvolvimento acesso Mobile</p>`;
+    }
+
+    if (container_populacao) {
+        document.getElementById("iframe-container-populacao").innerHTML = `
+        <p class="heading_container">Painel População em desenvolvimento acesso Mobile</p>`;
+    }
+
+    if (container_prefeitura) {
+        document.getElementById("iframe-container-prefeitura").innerHTML = `
+        <p class="heading_container">Painel Prefeitura em desenvolvimento acesso Mobile</p>`;
+    }
+
+
+
 } else {
-    document.getElementById("iframe-container").innerHTML = `
-        <p class="heading_container">Em desenvolvimento painel Navegador Descktop</p>
-  `;
+    if (container_saude) {
+        document.getElementById("iframe-container-saude").innerHTML = `
+            <p class="heading_container">Painel Saúde em desenvolvimento acesso navegador desktop</p>`;
+    }
+    if (container_populacao) {
+        document.getElementById("iframe-container-populacao").innerHTML = `
+            <p class="heading_container">Painel População em desenvolvimento acesso navegador desktop</p>`;
+    }
+    if (container_prefeitura) {
+        document.getElementById("iframe-container-prefeitura").innerHTML = `
+            <p class="heading_container">Painel Prefeitura em desenvolvimento acesso navegador desktop</p>`;
+    }
 }
+
+
+
+
+

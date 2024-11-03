@@ -485,6 +485,28 @@ a:focus {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
 }
 
+.blog_section .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.blog_section .btn-box a {
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: #4b208c;
+  color: #ffffff;
+  border-radius: 35px;
+}
+
+.blog_section .btn-box a:hover {
+  background-color: #5625a1;
+}
+
 .blog_section .box .img-box {
   position: relative;
 }
