@@ -56,10 +56,10 @@
                   <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/historia"> Cidade </a>
+                  <a class="nav-link" href="/painel_dados"> Painel de Dados </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/painel_dados"> Painel de Dados </a>
+                  <a class="nav-link" href="/historia"> Cidade </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/contact">Contato </a>
@@ -133,6 +133,61 @@
     <!-- end slider section -->
   </div>
 
+
+
+  <!-- Seção Painel de Dados -->
+
+  <section class="blog_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <!--<img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">-->
+      </div>
+      <div class="row">
+        <div class="col-md-auto">
+          <div class="box">
+            <a href="/painel_dados">
+              <div class="img-box">
+                <img src="{{ url_for('static', filename = 'images/Vamos Falar de Saúde.jpg')}}" alt="">
+            </a>
+          </div>
+          <div class="detail-box">
+            <h5>
+              Paineis de Dados
+            </h5>
+            <p>
+              Quer entender melhor a cidade e seus indicadores de saúde? Nossos painéis de dados, alimentados por fontes
+              como SEADE, Portal da Transparência e IBGE, oferecem informações claras e concisas para cidadãos, gestores
+              públicos e pesquisadores.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--<div class="col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="{{ url_for('static', filename = 'images/blog2.jpg')}}" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Blog Title Goes Here
+              </h5>
+              <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour, or randomised
+              </p>
+            </div>
+          </div>
+        </div>-->
+    </div>
+    <div class="btn-box">
+      <a href="/painel_dados">
+        Saiba Mais
+      </a>
+    </div>
+    </div>
+  </section>
+
+  <!-- fim da seção painel de dados -->
 
   <!-- Seção Cidade Santana de Parnaíba -->
   <section class="service_section layout_padding">
@@ -242,63 +297,6 @@
   <!-- fim da seção sobre -->
 
 
-
-
-  <!-- Seção Painel de Dados -->
-
-  <section class="blog_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <!--<img src="{{ url_for('static', filename = 'images/plug.png')}}" alt="">-->
-      </div>
-      <div class="row">
-        <div class="col-md-auto">
-          <div class="box">
-            <a href="/painel_dados">
-              <div class="img-box">
-                <img src="{{ url_for('static', filename = 'images/Vamos Falar de Saúde.jpg')}}" alt="">
-            </a>
-          </div>
-          <div class="detail-box">
-            <h5>
-              Paineis de Dados
-            </h5>
-            <p>
-              Quer entender melhor a cidade e seus indicadores de saúde? Nossos painéis de dados, alimentados por fontes
-              como SEADE, Portal da Transparência e IBGE, oferecem informações claras e concisas para cidadãos, gestores
-              públicos e pesquisadores.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--<div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="{{ url_for('static', filename = 'images/blog2.jpg')}}" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Blog Title Goes Here
-              </h5>
-              <p>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised
-              </p>
-            </div>
-          </div>
-        </div>-->
-    </div>
-    <div class="btn-box">
-      <a href="/painel_dados">
-        Saiba Mais
-      </a>
-    </div>
-    </div>
-  </section>
-
-  <!-- fim da seção painel de dados -->
-
-
   <!-- info section -->
 
   <section class="info_section layout_padding">
@@ -319,11 +317,11 @@
               <li><a href="/index"><span>
                     <h4>Home</h4>
                   </span></a></li>
-              <li><a href="/historia"><span>
-                    <h4>Cidade</h4>
-                  </span></a></li>
               <li><a href="/painel_dados"><span>
                     <h4>Painel de dados</h4>
+                  </span></a></li>
+              <li><a href="/historia"><span>
+                    <h4>Cidade</h4>
                   </span></a></li>
               <li><a href="/contact"><span>
                     <h4>Contato</h4>

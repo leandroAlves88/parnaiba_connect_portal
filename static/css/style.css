@@ -307,6 +307,7 @@ a:focus {
 
 .service_section {
   text-align: center;
+  background-color: #f3f0f6;
 }
 
 .service_section .heading_container {
@@ -397,7 +398,7 @@ a:focus {
 }
 
 .about_section {
-  background-color: #f3f0f6;
+  background-color: #ffffff;
 }
 
 .about_section .row {
