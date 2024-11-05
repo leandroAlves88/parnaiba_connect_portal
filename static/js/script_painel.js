@@ -38,7 +38,10 @@ if (detectar_mobile()) {
     }
     if (container_populacao) {
         document.getElementById("iframe-container-populacao").innerHTML = `
-            <p class="heading_container">Painel População em desenvolvimento acesso navegador desktop</p>`;
+            <iframe
+          src="https://app.powerbi.com/view?r=eyJrIjoiYmY4Yjg5OTktOWQzMS00Y2I4LWE0NDItNTFhZGJlYTFiMzZhIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9"
+          class="col-12 iframe-dashboard" frameborder="0" allowfullscreen="" title="Painel PowerBi Transparencia"
+          width="1800" height="600"></iframe>`;
     }
     if (container_prefeitura) {
         document.getElementById("iframe-container-prefeitura").innerHTML = `
