@@ -16,19 +16,19 @@ const container_prefeitura = document.getElementById("iframe-container-prefeitur
 if (detectar_mobile()) {
     if (container_saude) {
         document.getElementById("iframe-container-saude").innerHTML = `
-            <iframe title="Saude - Parnaíba Connect Final" width="1200" height="600" 
+            <iframe title="Saude - Parnaíba Connect Final" width="350" height="273.5" 
             src="https://app.powerbi.com/view?r=eyJrIjoiMzhlMTA5Y2QtZmUwZC00MWVkLThmZTgtZDZmMjIzNTEwMDU1IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" 
             frameborder="0" allowFullScreen="true"></iframe>`;
     }
     if (container_populacao) {
         document.getElementById("iframe-container-populacao").innerHTML = `
-            <iframe title="População - Parnaíba Connect Final" width="1200" height="600" 
+            <iframe title="População - Parnaíba Connect Final" width="350" height="273.5" 
             src="https://app.powerbi.com/view?r=eyJrIjoiZTk2YTk5MjAtNTY5ZC00Yzk1LTlmMmEtYmEyYTNmMjA3YzU4IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" 
             frameborder="0" allowFullScreen="true"></iframe> `;
     }
     if (container_prefeitura) {
         document.getElementById("iframe-container-prefeitura").innerHTML = `
-            <iframe title="Est. Vitais - Parnaíba Connect Final" width="1200" height="600" 
+            <iframe title="Est. Vitais - Parnaíba Connect Final" width="350" height="273.5" 
             src="https://app.powerbi.com/view?r=eyJrIjoiZTc5MjBlNGEtMzBlYS00Y2MyLTg2YzktMGVmZmQyMzk5OTUwIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" 
             frameborder="0" allowFullScreen="true"></iframe>`;
     }
@@ -36,19 +36,19 @@ if (detectar_mobile()) {
 } else {
     if (container_saude) {
         document.getElementById("iframe-container-saude").innerHTML = `
-            <iframe title="Saude - Parnaíba Connect Final" width="1200" height="600" 
+            <iframe title="Saude - Parnaíba Connect Final" width="1200" height="600"
             src="https://app.powerbi.com/view?r=eyJrIjoiMzhlMTA5Y2QtZmUwZC00MWVkLThmZTgtZDZmMjIzNTEwMDU1IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" 
             frameborder="0" allowFullScreen="true"></iframe>`;
     }
     if (container_populacao) {
         document.getElementById("iframe-container-populacao").innerHTML = `
-            <iframe title="População - Parnaíba Connect Final" width="1200" height="600" 
+            <iframe title="População - Parnaíba Connect Final" width="1200" height="600"
             src="https://app.powerbi.com/view?r=eyJrIjoiZTk2YTk5MjAtNTY5ZC00Yzk1LTlmMmEtYmEyYTNmMjA3YzU4IiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" 
             frameborder="0" allowFullScreen="true"></iframe> `;
     }
     if (container_prefeitura) {
         document.getElementById("iframe-container-prefeitura").innerHTML = `
-            <iframe title="Est. Vitais - Parnaíba Connect Final" width="1200" height="600" 
+            <iframe title="Est. Vitais - Parnaíba Connect Final" width="1200" height="600"
             src="https://app.powerbi.com/view?r=eyJrIjoiZTc5MjBlNGEtMzBlYS00Y2MyLTg2YzktMGVmZmQyMzk5OTUwIiwidCI6ImNmNzJlMmJkLTdhMmItNDc4My1iZGViLTM5ZDU3YjA3Zjc2ZiIsImMiOjR9" 
             frameborder="0" allowFullScreen="true"></iframe>`;
     }
